@@ -23,6 +23,7 @@
     <video id="video" width="320" height="240" preload autoplay loop muted></video>
       <canvas id="canvas" width="320" height="240"></canvas>
   </div>
+  <p id="p1">Hello World!</p>
 
   
 
@@ -49,6 +50,13 @@
           context.fillStyle = "#fff";
           context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
           context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
+          if (rect.x < 10){
+            document.getElementById("p1").innerHTML = "Left!";
+          }else if (rect.x > 170){
+            document.getElementById("p1").innerHTML = "Right!";
+          }else{
+            document.getElementById("p1").innerHTML = "Not Moving!";
+          }
         });
       });
 
