@@ -51,9 +51,9 @@
           context.fillStyle = "#fff";
           context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
           context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
-          if (rect.x < 10){
+          if (rect.x < 30){
             document.getElementById("p1").innerHTML = "Left!";
-          }else if (rect.x > 170){
+          }else if (rect.x > 120){
             document.getElementById("p1").innerHTML = "Right!";
           }else{
             document.getElementById("p1").innerHTML = "Not Moving!";
